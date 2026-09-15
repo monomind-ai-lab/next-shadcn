@@ -8,6 +8,7 @@ Unstyled, headless building blocks that provide behavior and accessibility:
 
 - `radix-ui` — accessible behaviors (Slot, Dialog, Popover, etc.)
 - `@base-ui/react` — low-level components from the Base UI project
+- `react-aria-components` — Adobe React Aria Components for building accessible UI patterns
 
 Primitives carry no styling. You compose your own classes on top of them.
 
