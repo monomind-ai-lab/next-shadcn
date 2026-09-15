@@ -14,6 +14,9 @@ Primitives carry no styling. You compose your own classes on top of them.
 
 ## Presets
 
+--preset b1ZzrZbpw
+https://ui.shadcn.com/create?preset=b1ZzrZbpw&item=preview&pointer=true&template=next-monorepo&base=radix
+
 Ready-to-use, styled components that layer Tailwind styling on top of primitives:
 
 - Live in `packages/ui/src/components/` (e.g. `button.tsx`)
