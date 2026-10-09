@@ -1,0 +1,57 @@
+/*
+ * Bridge: Untitled UI components rendered with the visual tokens of the
+ * next-shadcn preset. The shadcn variables in globals.css (--background,
+ * --primary, --border, --radius, ...) are the source of truth; Untitled UI's
+ * semantic tokens are mapped onto them here.
+ */
+
+@theme {
+    /* brand palette = Tailwind blue (shadcn --primary is blue-700 / blue-800) */
+    --color-brand-50: oklch(0.97 0.014 254.604);
+    --color-brand-100: oklch(0.932 0.032 255.585);
+    --color-brand-200: oklch(0.882 0.059 254.128);
+    --color-brand-300: oklch(0.809 0.105 251.813);
+    --color-brand-400: oklch(0.707 0.165 254.624);
+    --color-brand-500: oklch(0.623 0.214 259.815);
+    --color-brand-600: oklch(0.546 0.245 262.881);
+    --color-brand-700: oklch(0.488 0.243 264.376);
+    --color-brand-800: oklch(0.424 0.199 265.638);
+    --color-brand-900: oklch(0.379 0.146 265.522);
+    --color-brand-950: oklch(0.282 0.091 267.935);
+}
+
+@layer base {
+    :root,
+    .dark {
+        --color-bg-primary: var(--background);
+        --color-bg-primary_hover: var(--accent);
+        --color-bg-secondary: var(--muted);
+        --color-bg-secondary_hover: var(--accent);
+        --color-bg-tertiary: var(--accent);
+        --color-bg-active: var(--accent);
+
+        --color-bg-brand-solid: var(--primary);
+        --color-text-primary_on-brand: var(--primary-foreground);
+
+        --color-text-primary: var(--foreground);
+        --color-text-secondary: var(--secondary-foreground);
+        --color-text-tertiary: var(--muted-foreground);
+        --color-text-quaternary: var(--muted-foreground);
+        --color-text-placeholder: var(--muted-foreground);
+
+        --color-border-primary: var(--border);
+        --color-border-secondary: var(--border);
+        --color-border-tertiary: var(--border);
+        --color-border-brand: var(--primary);
+
+        --color-focus-ring: var(--ring);
+    }
+
+    :root {
+        --color-bg-brand-solid_hover: var(--color-brand-800);
+    }
+
+    .dark {
+        --color-bg-brand-solid_hover: var(--color-brand-700);
+    }
+}

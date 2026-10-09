@@ -37,13 +37,13 @@ packages/ui         Shared UI package — presets in src/components, styles in s
 Add a new preset to the `web` app, placing it in `packages/ui/src/components`:
 
 ```bash
-pnpm dlx shadcn@latest add button -c apps/web
+npx untitledui@latest add button -d packages/ui -p src/components -y
 ```
 
 ## Using components
 
 ```tsx
-import { Button } from "@workspace/ui/components/button";
+import { Button } from "@workspace/ui/components/base/buttons/button";
 ```
 
 ## Development
